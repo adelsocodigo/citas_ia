@@ -1,0 +1,14 @@
+﻿node_modules/
+dist/
+.vite/
+.netlify/
+.env
+.env.*
+serviceAccount.json
+*.b64.txt
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+.vscode/
+.idea/

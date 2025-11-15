@@ -1,0 +1,19 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "esbuild"
+
+[dev]
+  command = "vite"       # <-- arranca Vite en dev
+  targetPort = 5173      # <-- puerto del dev server de Vite
+  port = 8888            # <-- puerto de Netlify Dev (proxy + functions)
+  autoLaunch = false
+  framework = "#custom"  # evita detecciones raras
+
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/:splat"
+  status = 200

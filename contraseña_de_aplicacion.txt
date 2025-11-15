@@ -1,0 +1,7 @@
+zctegtxigjsnwalc
+
+citas-ia-Gemini
+
+
+
+npm run dev     para arrancar el server
